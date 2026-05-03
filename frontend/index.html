@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DevOps App</title>
+</head>
+<body>
+  <h1>🔥 Hello from DevOps Project</h1>
+  <p id="msg"></p>
+
+  <script>
+    fetch("http://localhost:3000")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("msg").innerText = data;
+      });
+  </script>
+</body>
+</html>
